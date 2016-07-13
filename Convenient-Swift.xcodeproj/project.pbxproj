@@ -222,6 +222,8 @@
 		53D97F061D0126D600DBA748 /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D97EF81D0126D600DBA748 /* MOBFoundation.framework */; };
 		53D97F071D0126D600DBA748 /* ShareSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 53D97EF91D0126D600DBA748 /* ShareSDK.bundle */; };
 		53D97F081D0126D600DBA748 /* ShareSDKConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D97EFA1D0126D600DBA748 /* ShareSDKConnector.framework */; };
+		53DD14591D365EF0002D1A96 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DD14511D365EF0002D1A96 /* GoogleMobileAds.framework */; };
+		53DD145B1D365F01002D1A96 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DD145A1D365F01002D1A96 /* CityViewController.swift */; };
 		53E713081C8FBDEA002D4238 /* fujindizhi@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53E713071C8FBDEA002D4238 /* fujindizhi@3x.png */; };
 		53E7130A1C8FBE10002D4238 /* fujindizhi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53E713091C8FBE10002D4238 /* fujindizhi@2x.png */; };
 		53E713151C8FC5DF002D4238 /* share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53E713131C8FC5DF002D4238 /* share@2x.png */; };
@@ -230,7 +232,6 @@
 		53E7131A1C8FFC93002D4238 /* XZClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E713191C8FFC93002D4238 /* XZClient.swift */; };
 		53EE33011CA914E50034127F /* arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53EE32FF1CA914E50034127F /* arrow_right@2x.png */; };
 		53EE33021CA914E50034127F /* arrow_right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53EE33001CA914E50034127F /* arrow_right@3x.png */; };
-		53EF6C1B1C910CB500307BAE /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EF6C1A1C910CB500307BAE /* CityViewController.swift */; };
 		53EF6C1F1C910D6900307BAE /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EF6C1E1C910D6900307BAE /* CityTableViewCell.swift */; };
 		53F86B3A1CB6475300B8FE07 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F86B381CB6475300B8FE07 /* Icon-60@2x.png */; };
 		53F86B3B1CB6475300B8FE07 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F86B391CB6475300B8FE07 /* Icon-60@3x.png */; };
@@ -508,6 +509,14 @@
 		53D97EF81D0126D600DBA748 /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundation.framework; sourceTree = "<group>"; };
 		53D97EF91D0126D600DBA748 /* ShareSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ShareSDK.bundle; sourceTree = "<group>"; };
 		53D97EFA1D0126D600DBA748 /* ShareSDKConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKConnector.framework; sourceTree = "<group>"; };
+		53DD14511D365EF0002D1A96 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		53DD14531D365EF0002D1A96 /* GADMAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
+		53DD14541D365EF0002D1A96 /* GADMAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
+		53DD14551D365EF0002D1A96 /* GADMediationAdRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMediationAdRequest.h; sourceTree = "<group>"; };
+		53DD14561D365EF0002D1A96 /* GADMEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMEnums.h; sourceTree = "<group>"; };
+		53DD14571D365EF0002D1A96 /* GADMRewardBasedVideoAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMRewardBasedVideoAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
+		53DD14581D365EF0002D1A96 /* GADMRewardBasedVideoAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMRewardBasedVideoAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
+		53DD145A1D365F01002D1A96 /* CityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		53E712FE1C8FB800002D4238 /* webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = webfont.ttf; sourceTree = "<group>"; };
 		53E713071C8FBDEA002D4238 /* fujindizhi@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fujindizhi@3x.png"; sourceTree = "<group>"; };
 		53E713091C8FBE10002D4238 /* fujindizhi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fujindizhi@2x.png"; sourceTree = "<group>"; };
@@ -517,7 +526,6 @@
 		53E713191C8FFC93002D4238 /* XZClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZClient.swift; sourceTree = "<group>"; };
 		53EE32FF1CA914E50034127F /* arrow_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_right@2x.png"; sourceTree = "<group>"; };
 		53EE33001CA914E50034127F /* arrow_right@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_right@3x.png"; sourceTree = "<group>"; };
-		53EF6C1A1C910CB500307BAE /* CityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		53EF6C1E1C910D6900307BAE /* CityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
 		53F86B381CB6475300B8FE07 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
 		53F86B391CB6475300B8FE07 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
@@ -539,6 +547,7 @@
 			files = (
 				53D97EFD1D0126D600DBA748 /* ShareSDKInterfaceAdapter.framework in Frameworks */,
 				53D97F041D0126D600DBA748 /* libWeChatSDK.a in Frameworks */,
+				53DD14591D365EF0002D1A96 /* GoogleMobileAds.framework in Frameworks */,
 				53C81DDC1CE1EAF90092BEF3 /* libxml2.2.tbd in Frameworks */,
 				53B502871C99451C00A024DE /* MessageUI.framework in Frameworks */,
 				53D97F081D0126D600DBA748 /* ShareSDKConnector.framework in Frameworks */,
@@ -801,8 +810,8 @@
 			isa = PBXGroup;
 			children = (
 				534926181C86E3A80077A8A6 /* HomeViewController.swift */,
-				53EF6C1A1C910CB500307BAE /* CityViewController.swift */,
 				53FD85891C91494400BCF3EF /* AddCityTableViewController.swift */,
+				53DD145A1D365F01002D1A96 /* CityViewController.swift */,
 				53B5029B1C99577000A024DE /* MoreTableViewController.swift */,
 				535CBFF61D20E04B00D12589 /* RootViewController.swift */,
 				5326DC161D2CC3C8007D7CD4 /* RootWeatherViewController.swift */,
@@ -854,6 +863,7 @@
 		53917E431C89619C002200C1 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				53DD14501D365EF0002D1A96 /* GoogleMobileAdsSdkiOS-7.8.1 */,
 				53C70A491D23CBB10059FB68 /* LBCalendar */,
 				53D97ED71D0126D600DBA748 /* ShareSDK */,
 				53FBBE0C1CE30570007796D8 /* TailRestrictions.plist */,
@@ -1083,6 +1093,28 @@
 				53D97EFA1D0126D600DBA748 /* ShareSDKConnector.framework */,
 			);
 			path = Required;
+			sourceTree = "<group>";
+		};
+		53DD14501D365EF0002D1A96 /* GoogleMobileAdsSdkiOS-7.8.1 */ = {
+			isa = PBXGroup;
+			children = (
+				53DD14511D365EF0002D1A96 /* GoogleMobileAds.framework */,
+				53DD14521D365EF0002D1A96 /* Mediation Adapters */,
+			);
+			path = "GoogleMobileAdsSdkiOS-7.8.1";
+			sourceTree = "<group>";
+		};
+		53DD14521D365EF0002D1A96 /* Mediation Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				53DD14531D365EF0002D1A96 /* GADMAdNetworkAdapterProtocol.h */,
+				53DD14541D365EF0002D1A96 /* GADMAdNetworkConnectorProtocol.h */,
+				53DD14551D365EF0002D1A96 /* GADMediationAdRequest.h */,
+				53DD14561D365EF0002D1A96 /* GADMEnums.h */,
+				53DD14571D365EF0002D1A96 /* GADMRewardBasedVideoAdNetworkAdapterProtocol.h */,
+				53DD14581D365EF0002D1A96 /* GADMRewardBasedVideoAdNetworkConnectorProtocol.h */,
+			);
+			path = "Mediation Adapters";
 			sourceTree = "<group>";
 		};
 		C74482A3D9F72EF11F6AE50E /* Frameworks */ = {
@@ -1410,6 +1442,7 @@
 				53EF6C1F1C910D6900307BAE /* CityTableViewCell.swift in Sources */,
 				531C24241C86BAD10009E0E6 /* XZSwiftColor.swift in Sources */,
 				530778551C92BAF60010E65C /* JSONAPI.m in Sources */,
+				53DD145B1D365F01002D1A96 /* CityViewController.swift in Sources */,
 				53917E6A1C897B85002200C1 /* UUChartLabel.m in Sources */,
 				53C70A801D23CC2D0059FB68 /* DateMessageView.m in Sources */,
 				530778541C92BAF60010E65C /* NSArray+JSONModel.m in Sources */,
@@ -1429,7 +1462,6 @@
 				531C24221C869BB90009E0E6 /* XZSwiftNavigationController.swift in Sources */,
 				534926171C86E29E0077A8A6 /* UITableView+FINAutomaticHeightCell.swift in Sources */,
 				53C70A821D23CC2D0059FB68 /* LBCalendar.m in Sources */,
-				53EF6C1B1C910CB500307BAE /* CityViewController.swift in Sources */,
 				530778511C92BAF60010E65C /* JSONModelArray.m in Sources */,
 				53C81DDA1CE1EAB80092BEF3 /* XPathQuery.m in Sources */,
 				531C23F01C8599420009E0E6 /* AppDelegate.swift in Sources */,
@@ -1586,6 +1618,7 @@
 					"$(PROJECT_DIR)/Libs/ShareSDK/Extend/QQConnectSDK",
 					"$(PROJECT_DIR)/Libs/ShareSDK/UI",
 					"$(PROJECT_DIR)/Libs/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenAPI.framework",
+					"$(PROJECT_DIR)/Libs/GoogleMobileAdsSdkiOS-7.8.1",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1645,6 +1678,7 @@
 					"$(PROJECT_DIR)/Libs/ShareSDK/Extend/QQConnectSDK",
 					"$(PROJECT_DIR)/Libs/ShareSDK/UI",
 					"$(PROJECT_DIR)/Libs/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenAPI.framework",
+					"$(PROJECT_DIR)/Libs/GoogleMobileAdsSdkiOS-7.8.1",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
