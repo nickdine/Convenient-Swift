@@ -156,8 +156,8 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
         
         let modelDic = self.HomeWeatherMdoel.weather[0]
         let infoDic =  (modelDic.objectForKey("info"))! as! NSMutableDictionary
-        let dayArray =  (infoDic.objectForKey("day"))! as! NSMutableArray
-        let nightArray =  (infoDic.objectForKey("night"))! as! NSMutableArray
+        let dayArray =  (infoDic.objectForKey("day"))! as! NSArray
+        let nightArray =  (infoDic.objectForKey("night"))! as! NSArray
         
         let str: String = "  " + (nightArray[2] as? String)! + "℃ ~ " + (dayArray[2] as? String)! + "℃  想容易，就用易"
         if (modelDic.objectForKey("date") != nil) {

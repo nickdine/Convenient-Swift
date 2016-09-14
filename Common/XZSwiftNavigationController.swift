@@ -29,30 +29,6 @@ class XZSwiftNavigationController: UINavigationController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationBar.shadowImage = UIImage()
-        self.navigationBar.layer.shadowRadius = 0.5;
-        self.navigationBar.layer.shadowOffset = CGSizeMake(0, 0.5)
-        self.navigationBar.layer.shadowOpacity=0.4
-        
-        UIApplication.sharedApplication().setStatusBarStyle(.LightContent, animated: true);
-        
-        let maskingView = UIView()
-        maskingView.userInteractionEnabled = false
-        maskingView.backgroundColor = UIColor(white: 0, alpha: 0.0);
-        self.navigationBar.insertSubview(maskingView, atIndex: 0);
-        
-        maskingView.snp_makeConstraints{ (make) -> Void in
-            make.left.bottom.right.equalTo(maskingView.superview!)
-            make.top.equalTo(maskingView.superview!).offset(-20);
-        }
-        self.frostedView = UIToolbar()
-        self.frostedView!.userInteractionEnabled = false
-        self.frostedView!.clipsToBounds = true
-        maskingView.addSubview(self.frostedView!);
-        
-        self.frostedView!.snp_makeConstraints{ (make) -> Void in
-            make.top.bottom.left.right.equalTo(maskingView);
-        }
         
         self.navigationBar.titleTextAttributes = [
             NSFontAttributeName : XZFont2(18),

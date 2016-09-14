@@ -289,8 +289,8 @@ class WeatherTabeleViewCell: UITableViewCell {
 
             let modelDic = weathermodel!.weather[0]
             let infoDic =  (modelDic.objectForKey("info"))! as! NSMutableDictionary
-            let dayArray =  (infoDic.objectForKey("day"))! as! NSMutableArray
-            let nightArray =  (infoDic.objectForKey("night"))! as! NSMutableArray
+            let dayArray =  (infoDic.objectForKey("day"))! as! NSArray
+            let nightArray =  (infoDic.objectForKey("night"))! as! NSArray
             
             //当前时间戳
             let date = NSDate()
@@ -386,8 +386,8 @@ class Weather_LineTabeleViewCell: UITableViewCell ,UUChartDataSource{
         for i in 0  ..< self.weakWeatherArray.count {
             let model = self.weakWeatherArray[i]
             let infoDic =  (model.objectForKey("info"))! as! NSMutableDictionary
-            let dayArray =  (infoDic.objectForKey("day"))! as! NSMutableArray
-            let nightArray =  (infoDic.objectForKey("night"))! as! NSMutableArray
+            let dayArray =  (infoDic.objectForKey("day"))! as! NSArray
+            let nightArray =  (infoDic.objectForKey("night"))! as! NSArray
             self.maxWeatherArray?.addObject(dayArray[2])
             self.minWeatherArray?.addObject(nightArray[2])
             
@@ -423,8 +423,8 @@ class Weather_LineTabeleViewCell: UITableViewCell ,UUChartDataSource{
             let model = self.weakWeatherArray[i]
             
             let infoDic =  (model.objectForKey("info"))! as! NSMutableDictionary
-            let dayArray =  (infoDic.objectForKey("day"))! as! NSMutableArray
-            let nightArray =  (infoDic.objectForKey("night"))! as! NSMutableArray
+            let dayArray =  (infoDic.objectForKey("day"))! as! NSArray
+            let nightArray =  (infoDic.objectForKey("night"))! as! NSArray
             
             if i == 0{
                 self.maxWeatherStr = dayArray[2] as? String
@@ -528,7 +528,7 @@ class Weather_TimeTabeleViewCell: UITableViewCell {
                 }
                 label = self.weatherLabelArray![i] as! UILabel
                 let infoDic =  (model?.objectForKey("info"))! as! NSMutableDictionary
-                let dayArray =  (infoDic.objectForKey("day"))! as! NSMutableArray
+                let dayArray =  (infoDic.objectForKey("day"))! as! NSArray
                 label.text = dayArray[1] as? String
             }
         }
@@ -544,7 +544,7 @@ class Weather_WeekTabeleViewCell: Weather_TimeTabeleViewCell {
                 
                 let model = weathermodel?.weather[i]
                 let infoDic =  (model!.objectForKey("info"))! as! NSMutableDictionary
-                let nightArray =  (infoDic.objectForKey("night"))! as! NSMutableArray
+                let nightArray =  (infoDic.objectForKey("night"))! as! NSArray
                 
                 label.text = "周" + (model!.objectForKey("week") as? String)!
                 

@@ -212,8 +212,8 @@ class RootWeatherTableViewCell: UITableViewCell {
             
             let modelDic = weathermodel!.weather[0]
             let infoDic =  (modelDic.objectForKey("info"))! as! NSMutableDictionary
-            let dayArray =  (infoDic.objectForKey("day"))! as! NSMutableArray
-            let nightArray =  (infoDic.objectForKey("night"))! as! NSMutableArray
+            let dayArray =  (infoDic.objectForKey("day"))! as! NSArray
+            let nightArray =  (infoDic.objectForKey("night"))! as! NSArray
             
             //当前时间戳
             let date = NSDate()
