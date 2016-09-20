@@ -134,8 +134,8 @@ class CityTableViewCell: UITableViewCell {
         let modelDic = weathermodel.weather[0]
         if (modelDic.objectForKey("info") != nil) {
             let infoDic =  (modelDic.objectForKey("info"))! as! NSMutableDictionary
-            let dayArray =  (infoDic.objectForKey("day"))! as! NSMutableArray
-            let nightArray =  (infoDic.objectForKey("night"))! as! NSMutableArray
+            let dayArray =  (infoDic.objectForKey("day"))! as! NSArray
+            let nightArray =  (infoDic.objectForKey("night"))! as! NSArray
             
             self.weatherImageView?.image = UIImage(named:"cm_weathericon_" + (dayArray[0] as! String))
             self.weatherLabel?.text = (weathermodel.realtime?.weather?.temperature)!  + "°"
